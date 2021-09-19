@@ -1,0 +1,16 @@
+spring:
+  datasource:
+    url: ${DATABASE_URL}
+    driver-class-name: org.postgresql.Driver
+    hikari:
+      connection-timeout: 20000
+      maximum-pool-size: 5
+  jpa:
+    hibernate:
+      ddl-auto: create
+  application:
+    name: catequese-backend
+server:
+  port: 8081
+  servlet:
+    context-path: /api

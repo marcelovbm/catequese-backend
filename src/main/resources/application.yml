@@ -1,0 +1,16 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://ec2-54-146-84-101.compute-1.amazonaws.com:5432/d6e5rrgadig6gm
+    username: rdmmsqejjsaihu
+    password: 466457ef3b717589dece00a74b792adc481e75cf6c03e41a8677b1b386773645
+    driver-class-name: org.postgresql.Driver
+    hikari:
+      connection-timeout: 20000
+      maximum-pool-size: 5
+  jpa:
+    hibernate:
+      ddl-auto: create
+  application:
+    name: catequese-backend
+server:
+  port: 8081
