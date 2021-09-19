@@ -1,0 +1,5 @@
+languagem: java
+jdk:
+  -openjdk11
+deploy:
+  provider: heroku
