@@ -1,5 +1,9 @@
 languagem: java
-jdk:
-  -openjdk11
+jdk: "-openjdk11"
 deploy:
   provider: heroku
+  api_key:
+    secure: IKVSCpt1FkSEBbq+g2JJnGxevx5gRwEl71Bg1BoXWYinSbUNdmAYn6sgRIbkuc0earqspzICk9qC/HPC06Bts/nKCGQvR/w/3KCND+xbwlTKvsp5FuLrPL1vHRXBW2hO/mE1Mrzg9ZWUssiOPTHIBcvXUyHcQSUbACYi+o3XKBI5FqJCjoyxLHE0bBf2988VXKgHiPBNB2OhZlvA+lBh+R8tPLi4Xt91IEPs7WmviSb3i5ygoGgp8NbBF0up54iNxMfz1dUaLvCP6V0jzykmImWN3cn8CrMilNgp4GBrGtef/095Ycf5KPwvLMjQIwBT/Bge5Q5MLFD1KATdA+q8n+bpltWUIjxoolJW5EakyPwrinPccIrJKeVtG0DylGe8N7IqD8Yw+kbIGiun02GKV552G2abnIJmTb3O5za92pJ8ahvBGj1KFUKunhH1oFS+amGzxkeN54WzOL7eyuIgcqgLDVu7dam3DU3/XHiGtEqCLWusUpd6AyO0rvlWagswsW2RnomFk0buZFot0+MLpE/zMhWqjGtwuXvzfuh3HpioDTzQj+tdnYW0tslYud+KsQYkBmdtQncYSA/PTVmnKPSnB2xmG/tu+q4b6VYeKawZ/yIOJXFwCByCwfrM7v634Cd4XN8ZxFjrGfc+O9YBqDGreMNx/qoXFgEE4+Ov9jU=
+  app: catequese-dev
+  on:
+    all_branches: true
