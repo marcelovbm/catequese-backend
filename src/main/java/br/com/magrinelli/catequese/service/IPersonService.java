@@ -6,13 +6,13 @@ import br.com.magrinelli.catequese.entity.Person;
 
 public interface IPersonService {
 
-    public Person create(Person person);
+	public Person create(Person person);
 
-    public Person get(Long personId);
+	public Person get(Long personId);
 
-    public List<Person> list();
+	public List<Person> list();
 
-    public Boolean delete(Long personId);
+	public Boolean delete(Long personId);
 
-    public Person update(Person person);
+	public Person update(Person person);
 }

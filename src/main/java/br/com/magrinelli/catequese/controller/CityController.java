@@ -19,31 +19,31 @@ import br.com.magrinelli.catequese.entity.City;
 @RequestMapping(value = "/person/{person}/edress/{edress}/city")
 public class CityController {
 
-    private static final String ID = "/{id}";
+	private static final String ID = "/{id}";
 
-    @GetMapping
-    public ResponseEntity<List<City>> list(@PathVariable Long person, @PathVariable Long edress) {
-        return ResponseEntity.status(HttpStatus.NOT_IMPLEMENTED).build();
-    }
+	@GetMapping
+	public ResponseEntity<List<City>> list(@PathVariable Long person, @PathVariable Long edress) {
+		return ResponseEntity.status(HttpStatus.NOT_IMPLEMENTED).build();
+	}
 
-    @GetMapping(value = ID)
-    public ResponseEntity<City> get(@PathVariable Long person, @PathVariable Long edress, @PathVariable Long id) {
-        return ResponseEntity.status(HttpStatus.NOT_IMPLEMENTED).build();
-    }
+	@GetMapping(value = ID)
+	public ResponseEntity<City> get(@PathVariable Long person, @PathVariable Long edress, @PathVariable Long id) {
+		return ResponseEntity.status(HttpStatus.NOT_IMPLEMENTED).build();
+	}
 
-    @PostMapping
-    public ResponseEntity<City> add(@PathVariable Long person, @PathVariable Long edress, @RequestBody City city) {
-        return ResponseEntity.status(HttpStatus.NOT_IMPLEMENTED).build();
+	@PostMapping
+	public ResponseEntity<City> add(@PathVariable Long person, @PathVariable Long edress, @RequestBody City city) {
+		return ResponseEntity.status(HttpStatus.NOT_IMPLEMENTED).build();
 
-    }
+	}
 
-    @PutMapping
-    public ResponseEntity<City> update(@PathVariable Long person, @PathVariable Long edress, @RequestBody City city) {
-        return ResponseEntity.status(HttpStatus.NOT_IMPLEMENTED).build();
-    }
+	@PutMapping
+	public ResponseEntity<City> update(@PathVariable Long person, @PathVariable Long edress, @RequestBody City city) {
+		return ResponseEntity.status(HttpStatus.NOT_IMPLEMENTED).build();
+	}
 
-    @DeleteMapping(value = ID)
-    public ResponseEntity<?> delete(@PathVariable Long person, @PathVariable Long edress, @PathVariable Long id) {
-        return ResponseEntity.status(HttpStatus.NOT_IMPLEMENTED).build();
-    }
+	@DeleteMapping(value = ID)
+	public ResponseEntity<?> delete(@PathVariable Long person, @PathVariable Long edress, @PathVariable Long id) {
+		return ResponseEntity.status(HttpStatus.NOT_IMPLEMENTED).build();
+	}
 }

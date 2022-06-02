@@ -5,11 +5,11 @@ import lombok.Getter;
 @Getter
 public enum TypeOfPersonEnum {
 
-    STUDENT("student"), TEACHER("teacher");
+	STUDENT("student"), TEACHER("teacher");
 
-    private String value;
+	private String value;
 
-    TypeOfPersonEnum(String value) {
-        this.value = value;
-    }
+	TypeOfPersonEnum(String value) {
+		this.value = value;
+	}
 }

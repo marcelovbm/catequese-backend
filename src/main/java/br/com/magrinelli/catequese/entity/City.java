@@ -15,15 +15,15 @@ import lombok.Setter;
 @Setter
 @Entity(name = "city")
 public class City {
-    
-    @Id
-    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "city_sequence")
-    @SequenceGenerator(name = "city_sequence", sequenceName = "city_seq")
-    private Long id;
-    @NonNull
-    private String name;
-    @NonNull
-    private String postalCode;
-    @NonNull
-    private String state;
+
+	@Id
+	@GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "city_sequence")
+	@SequenceGenerator(name = "city_sequence", sequenceName = "city_seq")
+	private Long id;
+	@NonNull
+	private String name;
+	@NonNull
+	private String postalCode;
+	@NonNull
+	private String state;
 }

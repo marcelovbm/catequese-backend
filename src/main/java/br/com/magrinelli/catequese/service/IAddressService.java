@@ -2,11 +2,9 @@ package br.com.magrinelli.catequese.service;
 
 import java.util.List;
 
-import org.springframework.stereotype.Repository;
-
 import br.com.magrinelli.catequese.entity.Address;
 
-@Repository
+
 public interface IAddressService {
     
     public Address create(final Address address);

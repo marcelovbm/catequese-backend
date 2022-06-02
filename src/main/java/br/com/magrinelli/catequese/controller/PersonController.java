@@ -19,30 +19,30 @@ import br.com.magrinelli.catequese.entity.Person;
 @RequestMapping(value = "/person")
 public class PersonController {
 
-    private static final String ID = "/{id}";
+	private static final String ID = "/{id}";
 
-    @GetMapping
-    public ResponseEntity<List<Person>> list() {
-        return ResponseEntity.status(HttpStatus.NOT_IMPLEMENTED).build();
-    }
+	@GetMapping
+	public ResponseEntity<List<Person>> list() {
+		return ResponseEntity.status(HttpStatus.NOT_IMPLEMENTED).build();
+	}
 
-    @GetMapping(value = ID)
-    public ResponseEntity<Person> get(@PathVariable Long id) {
-        return ResponseEntity.status(HttpStatus.NOT_IMPLEMENTED).build();
-    }
+	@GetMapping(value = ID)
+	public ResponseEntity<Person> get(@PathVariable Long id) {
+		return ResponseEntity.status(HttpStatus.NOT_IMPLEMENTED).build();
+	}
 
-    @PostMapping
-    public ResponseEntity<Person> add(@RequestBody Person person) {
-        return ResponseEntity.status(HttpStatus.NOT_IMPLEMENTED).build();
-    }
+	@PostMapping
+	public ResponseEntity<Person> add(@RequestBody Person person) {
+		return ResponseEntity.status(HttpStatus.NOT_IMPLEMENTED).build();
+	}
 
-    @PutMapping
-    public ResponseEntity<Person> update(@RequestBody Person person) {
-        return ResponseEntity.status(HttpStatus.NOT_IMPLEMENTED).build();
-    }
+	@PutMapping
+	public ResponseEntity<Person> update(@RequestBody Person person) {
+		return ResponseEntity.status(HttpStatus.NOT_IMPLEMENTED).build();
+	}
 
-    @DeleteMapping(value = ID)
-    public ResponseEntity<?> delete() {
-        return ResponseEntity.status(HttpStatus.NOT_IMPLEMENTED).build();
-    }
+	@DeleteMapping(value = ID)
+	public ResponseEntity<?> delete() {
+		return ResponseEntity.status(HttpStatus.NOT_IMPLEMENTED).build();
+	}
 }

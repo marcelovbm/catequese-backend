@@ -19,24 +19,24 @@ import lombok.Data;
 @Entity(name = "person")
 public class Person {
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "person_sequence")
-    @SequenceGenerator(name = "person_sequence", sequenceName = "person_seq")
-    private Long id;
-    @NonNull
-    private String name;
-    @NonNull
-    private LocalDate birthady;
-    @ManyToOne
-    private Person father;
-    @ManyToOne
-    private Person mother;
-    private String civilState;
-    @NonNull
-    @OneToOne
-    private Address edress;
-    @NonNull
-    private String phoneNumber;
-    @NonNull
-    private TypeOfPersonEnum typeOfPerson;
+	@Id
+	@GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "person_sequence")
+	@SequenceGenerator(name = "person_sequence", sequenceName = "person_seq")
+	private Long id;
+	@NonNull
+	private String name;
+	@NonNull
+	private LocalDate birthady;
+	@ManyToOne
+	private Person father;
+	@ManyToOne
+	private Person mother;
+	private String civilState;
+	@NonNull
+	@OneToOne
+	private Address edress;
+	@NonNull
+	private String phoneNumber;
+	@NonNull
+	private TypeOfPersonEnum typeOfPerson;
 }
